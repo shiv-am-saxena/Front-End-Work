@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            3d
+        </title>
+        <link href="3d.css" rel="stylesheet" type="text/css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    <body>
+        <video src="Anonymous__Donning_the_Digital_Mask__HD_Animation(720p).mp4" autoplay muted loop type='mp4'></video>
+        <ul>
+            <li>
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-facebook" aria-hidden="true"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-twitter" aria-hidden="true"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-linkedin" aria-hidden="true"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-youtube-play" aria-hidden="true"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-instagram" aria-hidden="true"></span>
+                </a>
+            </li>
+        </ul>
+        <style>
+            body
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul 
+{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li 
+{
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    margin: 0 30px;
+    transform:rotate(-30deg) skew(25deg);
+}
+
+ul li span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transition: 0.5s;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px !important;
+}
+
+ul li:hover span:nth-child(5)
+{
+    transform: translate(40px,-40px);
+    opacity: 1;
+}
+
+ul li:hover span:nth-child(4)
+{
+    transform: translate(30px,-30px);
+    opacity: 0.8;
+}
+
+ul li:hover span:nth-child(3)
+{
+    transform: translate(20px,-20px);
+    opacity: 0.6;
+}
+
+ul li:hover span:nth-child(2)
+{
+    transform: translate(10px,-10px);
+    opacity: 0.4;
+}
+
+ul li:hover span:nth-child(1)
+{
+    transform: translate(0,0);
+    opacity: 0.2;
+}
+
+ul li:nth-child(1) span
+{
+    background: #3b5999;
+}
+
+ul li:nth-child(2) span
+{
+    background:#55acee;
+}
+
+ul li:nth-child(3) span
+{
+    background: #0077b5;
+}
+
+ul li:nth-child(4) span
+{
+    background: #dd4b39;
+}
+
+ul li:nth-child(5) span
+{
+    background: #e4405f;
+}
+ video
+      {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity:0.85;
+        pointer-events: none;
+      }
+        </style>
+    </body>
+</html>
