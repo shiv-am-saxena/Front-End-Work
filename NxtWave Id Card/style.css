@@ -133,7 +133,14 @@ body {
     list-style-type: disc;
     font-size: 20px;
 }
-
+.edu, .skills, .links
+{
+    font-size: 20px;
+    font-family: oxanium;
+    color: #0e5f99;
+    margin-left: 30px;
+    text-align: left;
+}
 .a a {
     border-bottom: 2px solid transparent;
     text-decoration: none;
@@ -146,6 +153,7 @@ body {
     border-bottom: 2px solid #0e5f99;
     color: #0e5f99;
     font-size: 20px;
+    text-decoration: none;
     transition: 0.5s;
 }
 
@@ -213,7 +221,6 @@ body {
 
     .skillset-points {
         font-size: 20px;
-        margin: 0;
     }
 
     li {
@@ -290,7 +297,6 @@ body {
 
     .skillset-points {
         font-size: 20px;
-        margin: 0;
     }
 
     li {
@@ -367,7 +373,6 @@ body {
 
     .skillset-points {
         font-size: 20px;
-        margin-left: auto;
     }
 
     li {
@@ -408,7 +413,6 @@ body {
 
     .skillset-points {
         font-size: 30px;
-        margin: 0;
     }
 
     li {
