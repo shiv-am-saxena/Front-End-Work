@@ -367,7 +367,7 @@ body {
 
     .skillset-points {
         font-size: 20px;
-        margin: 0;
+        margin-left: auto;
     }
 
     li {
