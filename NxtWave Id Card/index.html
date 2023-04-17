@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="style.css">
+    <title>Shivam Saxena</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="v_id d-flex justify-content-center" id="sectionIDcard">
+        <div class="virtual-id-card d-flex flex-column justify-content-center">
+            <div class="group-name-header d-flex flex-column justify-content-evenly">
+                <h2 class="group-name">Rutherford_Jan</h2>
+                <img class="profile-image" src="https://res.cloudinary.com/df6v9cjai/image/upload/v1681576663/profile_unbkct.jpg" alt="" />
+                <div class="vid-content">
+                    <h2 class="stu_name">Shivam Saxena</h2>
+                    <h4 class="dob">22<sup>nd</sup> December 2003</h4>
+                    <h3 class="grad_year">June 2022</h3>
+                    <h3 class="stream">Computer Science & Engineering</h3>
+                </div>
+                <div class="professional-bio-btn">
+                    <button class="btn-id" onclick="display('#sectionDashboard')">
+                        My Professional Bio
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionDashboard" class="prof-dashboard d-flex justify-content-center">
+        <div class="dashcard">
+            <h2 class="heading">My Bio</h2>
+            <div class="skillset-points">
+                <ul class="list-points">
+                    <li class="points">
+                        Educational Qualification:
+                        <ol class="edu">
+                            <li class="ed">
+                                Diploma in Computer Science and Engineering
+                            </li>
+                            <li class="ed">Intermediate</li>
+                            <li class="ed">HighSchool</li>
+                        </ol>
+                    </li>
+                    <li class="points">
+                        Skills:
+                        <ol class="skills">
+                            <li class="skill">C++</li>
+                            <li class="skill">Java</li>
+                            <li class="skill">Front-End Development</li>
+                        </ol>
+                    </li>
+                    <li class="points">
+                        Links:
+                        <ol class="links">
+                            <li class="a">
+                                <a href="http://linkedin.com/in/shiv-am-saxena" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                            </li>
+                            <li class="a">
+                                <a href="http://twitter.com/shiv_am_saxena" target="_blank" rel="noopener noreferrer">Twitter</a>
+                            </li>
+                            <li class="a">
+                                <a href="http://instagram.com/shiv_am_saxena" target="_blank" rel="noopener noreferrer">Instagram</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn-primary" onclick="display('#sectionIDcard')">
+                Back
+            </button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>

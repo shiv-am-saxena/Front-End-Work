@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Bai+Jamjuree&family=Baumans&family=Caveat:wght@400;500&family=Goldman&family=Jura:wght@300;400&family=Orbitron&family=Oxanium:wght@300;400&family=Play&family=Rajdhani:wght@300;400;500&family=Zen+Dots&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: url("https://res.cloudinary.com/df6v9cjai/image/upload/v1681634082/cool-background_bwa1ha.png");
+    background-size: cover;
+}
+
+.v_id,
+.prof-dashboard {
+    height: 100vh;
+    width: 100vw;
+    /* background: url("https://res.cloudinary.com/df6v9cjai/image/upload/v1681634082/cool-background_bwa1ha.png");
+	background-size: cover; */
+    margin: auto;
+}
+
+.virtual-id-card {
+    height: 80vh;
+    width: 25%;
+    margin: auto;
+    background: #fff;
+    align-content: center;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid skyblue;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+.group-name-header {
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+    margin: 50px auto;
+}
+
+.group-name {
+    font-size: 40px;
+    font-family: rajdhani;
+    font-weight: bold;
+    color: #0e5f99;
+}
+
+.profile-image {
+    height: 350px;
+    width: 350px;
+    margin: 20px auto;
+    border: 2px solid #0e5f99;
+}
+
+.stu_name {
+    font-size: 38px;
+    text-transform: uppercase;
+    font-family: bai jamjuree;
+    font-weight: 600;
+    color: #0e5f99;
+}
+
+.dob {
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: rajdhani;
+    color: #0e5f99;
+}
+
+.grad_year,
+.stream {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: rajdhani;
+    color: #0e5f99;
+}
+
+.btn-id {
+    margin: 10px;
+    padding: 10px;
+    color: #0e5f99;
+    font-size: 25px;
+    font-family: oxanium;
+    font-weight: 500;
+    background: transparent;
+    border: 1px solid #0e5f99;
+    transition: 0.5s;
+}
+
+.btn-id:hover {
+    background: #0e5f99;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.dashcard {
+    text-align: center;
+    height: 60%;
+    width: 60%;
+    flex-wrap: wrap;
+    background: #ffffff;
+    margin: auto;
+    border-radius: 10px;
+    border: 3px solid skyblue;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+.heading {
+    font-size: 40px;
+    font-family: rajdhani;
+    font-weight: 600;
+    color: #0e5f99;
+    text-align: center;
+    margin: 20px;
+}
+
+.skillset-points {
+    font-size: 20px;
+    font-family: oxanium;
+    color: #0e5f99;
+    margin: 30px;
+    text-align: left;
+}
+
+.points {
+    list-style-type: disc;
+    font-size: 20px;
+}
+
+.a a {
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    color: #0e5f99;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.a a:hover {
+    border-bottom: 2px solid #0e5f99;
+    color: #0e5f99;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+@media (max-width: 1600px) and (min-width:800px) {
+    .html {
+        overflow-x: hidden;
+    }
+
+    .virtual-id-card {
+        width: 50%;
+        height: auto;
+        margin: auto;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .group-name-header {
+        margin: auto;
+    }
+
+    .group-name {
+        font-size: 30px;
+    }
+
+    .profile-image {
+        width: calc(60% - 20px);
+        height: auto;
+    }
+
+    .stu_name {
+        font-size: 25px;
+    }
+
+    .dob {
+        font-size: 20px;
+    }
+
+    .grad_year,
+    .stream {
+        font-size: 20px;
+    }
+
+    .btn-id {
+        font-size: 20px;
+    }
+
+    .prof-dashboard {
+        height: auto;
+        width: 100%;
+        margin: auto;
+        padding-bottom: 20vh;
+    }
+
+    .dashcard {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .skillset-points {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+    .a a {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 800px) and (min-width: 400px) {
+    .html {
+        overflow-x: hidden;
+    }
+
+    .virtual-id-card {
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .group-name-header {
+        margin: auto;
+    }
+
+    .group-name {
+        font-size: 30px;
+    }
+
+    .profile-image {
+        width: calc(70% - 20px);
+        height: auto;
+    }
+
+    .stu_name {
+        font-size: 25px;
+    }
+
+    .dob {
+        font-size: 20px;
+    }
+
+    .grad_year,
+    .stream {
+        font-size: 20px;
+    }
+
+    .btn-id {
+        font-size: 20px;
+    }
+
+    .prof-dashboard {
+        height: auto;
+        width: 100%;
+        margin: auto;
+        padding-bottom: 20vh;
+    }
+
+    .dashcard {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .skillset-points {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+    .a a {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .html {
+        overflow-x: hidden;
+    }
+
+    .virtual-id-card {
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .group-name-header {
+        margin: auto;
+    }
+
+    .group-name {
+        font-size: 30px;
+    }
+
+    .profile-image {
+        height: 150px;
+        width: 150px;
+    }
+
+    .stu_name {
+        font-size: 25px;
+    }
+
+    .dob {
+        font-size: 20px;
+    }
+
+    .grad_year,
+    .stream {
+        font-size: 20px;
+    }
+
+    .btn-id {
+        font-size: 20px;
+    }
+
+    .prof-dashboard {
+        height: auto;
+        width: 100%;
+        margin: auto;
+        padding-bottom: 20vh;
+    }
+
+    .dashcard {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .skillset-points {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+    .a a {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-height:auto) {
+    .group-name {
+        font-size: 35px;
+    }
+
+    .stu_name {
+        font-size: 40px;
+    }
+
+    .dob {
+        font-size: 30px;
+    }
+
+    .grad_year,
+    .stream {
+        font-size: 30px;
+    }
+
+    .btn-id {
+        font-size: 30px;
+    }
+
+    .heading {
+        font-size: 35px;
+    }
+
+    .skillset-points {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    li {
+        font-size: 30px;
+    }
+
+    .a a {
+        font-size: 25px;
+    }
+}
