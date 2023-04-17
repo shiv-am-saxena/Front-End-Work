@@ -8,11 +8,14 @@
     <meta name="color-scheme" content="light dark" />
     <link rel="stylesheet" href="style.css">
     <title>Shivam Saxena</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="v_id d-flex justify-content-center" id="sectionIDcard">
+    <div id="section1" class="v_id d-flex justify-content-center" >
         <div class="virtual-id-card d-flex flex-column justify-content-center">
             <div class="group-name-header d-flex flex-column justify-content-evenly">
                 <h2 class="group-name">Rutherford_Jan</h2>
@@ -24,14 +27,14 @@
                     <h3 class="stream">Computer Science & Engineering</h3>
                 </div>
                 <div class="professional-bio-btn">
-                    <button class="btn-id" onclick="display('#sectionDashboard')">
+                    <button class="btn-id" onclick="display('section3')">
                         My Professional Bio
                     </button>
                 </div>
             </div>
         </div>
     </div>
-    <div id="sectionDashboard" class="prof-dashboard d-flex justify-content-center">
+    <div class="prof-dashboard d-flex justify-content-center" id="section3">
         <div class="dashcard">
             <h2 class="heading">My Bio</h2>
             <div class="skillset-points">
@@ -70,7 +73,7 @@
                     </li>
                 </ul>
             </div>
-            <button class="btn btn-primary" onclick="display('#sectionIDcard')">
+            <button class="btn btn-primary" onclick="display('section1')">
                 Back
             </button>
         </div>
