@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Bai+Jamjuree&family=Baumans&family=Caveat:wght@400;500&family=Goldman&family=Jura:wght@300;400&family=Orbitron&family=Oxanium:wght@300;400&family=Play&family=Rajdhani:wght@300;400;500&family=Zen+Dots&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+}
+::selection {
+	background-color: #ff4320;
+	color: #fff;
+}
+.nav-bar {
+	position: sticky;
+	background: #fff;
+	top: 0;
+	margin: 0px;
+	padding: 5px;
+	height: 80px;
+	border-bottom: 3px solid #ff4320;
+	/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+.name.logo-left {
+	position: relative;
+    width: 600px;
+    text-align: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-25%);
+}
+.draw {
+	stroke: #ff4320;
+	stroke-width: 1px;
+	fill: transparent;
+	stroke-dasharray: 190;
+	stroke-dashoffset: 190;
+	animation: animate 8s both infinite;
+}
+@keyframes animate {
+	0% {
+		stroke-dashoffset: 190;
+	}
+	25% {
+		stroke-dashoffset: 0;
+		fill: #ff4320;
+	}
+	75% {
+		stroke-dashoffset: 0;
+		fill: #ff4320;
+	}
+	100% {
+		stroke-dashoffset: 190;
+	}
+}
+.link-right
+{
+    justify-content: space-evenly;
+    list-style-type: none;
+    width:auto;
+    /* line-height:  */
+    margin: auto 50px;
+    padding: 0px;
+}
+.link-right .page
+{
+    display: inline-block;
+    margin:0 20px;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'jura', sans-serif;
+    font-weight: 500;
+    color: #ff4320;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.link-right .page .nxt-door
+{
+    text-decoration: none;
+    color:#000;
+    font-weight:bold;
+    transition: 0.5s;
+}
+.link-right .page .nxt-door:hover
+{
+    color: #ff4320;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.link-right .page select[name="color-picker"]
+{
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+    font-size: 25px;
+    font-family: 'jura', sans-serif;
+    font-weight: 600;
+    color: #ff4320;
+    text-decoration: none;
+}
+option[value="#FF4320"] {
+    background-color: #ff4320;
+    color: #fff;
+}
+option[value="skyblue"] {
+    background-color: skyblue;
+    color: #fff;
+}
+option[value="#a500ff"] {
+    background-color: #a500ff;
+    color: #fff;
+}
+option[value="#2200ff"] {
+    background-color: #2200ff;
+    color: #fff;
+}
+option[value="#17B486"] {
+    background-color: #17B486;
+    color: #fff;
+}
+.home_page-section,
+.about-us-section,
+.project-section {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	color: #000;
+}

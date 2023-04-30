@@ -61,14 +61,17 @@ svg .draw {
 		stroke-dashoffset: 190;
 	}
 }
+.navbar{
+	width:100%;
+}
 .menu {
 	position: absolute;
 	display: flex;
 	float: right;
-	width: 25vw;
+	width: auto;
 	align-items: center;
 	justify-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 	/* background-color: #ff4320; */
 	right: 5rem;
 }
@@ -154,7 +157,7 @@ svg .draw {
 	color: #fff;
 }
 .nxt-door {
-	margin: auto;
+	margin: 0 0.75rem;
 	color: #000;
 	font-family: jura;
 	text-decoration: none;
