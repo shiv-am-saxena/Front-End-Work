@@ -5,16 +5,6 @@
     padding: 0;
     text-decoration: none;
 }
-
-html {
-    /* overflow-x: hidden; */
-}
-
-body {
-    /*     background: url("https://res.cloudinary.com/df6v9cjai/image/upload/v1681634082/cool-background_bwa1ha.png");
-background-size: cover; */
-}
-
 .v_id,
 .prof-dashboard {
     min-height: 100vh;
