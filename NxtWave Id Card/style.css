@@ -96,8 +96,8 @@
 }
 
 .prof-dashboard .dashcard {
+    height:auto;
     width: 60vw;
-    aspect-ratio: 1/1;
     margin: 20vh auto;
     background: #fff;
     text-align: center;
