@@ -15,38 +15,40 @@
 	padding: 5px;
 	height: 80px;
 	border-bottom: 3px solid #ff4320;
+    z-index: 1000;
 	/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 .name.logo-left {
-	position: relative;
+    position: relative;
     width: 600px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     left: 0;
-    top: 50%;
-    transform: translateY(-25%);
 }
 .draw {
 	stroke: #ff4320;
 	stroke-width: 1px;
-	fill: transparent;
+	fill: #ff4320;
 	stroke-dasharray: 190;
 	stroke-dashoffset: 190;
 	animation: animate 8s both infinite;
 }
 @keyframes animate {
 	0% {
+		stroke-dashoffset: 0;
+	}
+	54% {
 		stroke-dashoffset: 190;
+        fill: transparent;
 	}
-	25% {
-		stroke-dashoffset: 0;
-		fill: #ff4320;
-	}
-	75% {
-		stroke-dashoffset: 0;
-		fill: #ff4320;
+	56% {
+		stroke-dashoffset: 190;
+		fill: transparent;
 	}
 	100% {
-		stroke-dashoffset: 190;
+        stroke-dashoffset: 0;
 	}
 }
 .link-right
@@ -80,8 +82,13 @@
 .link-right .page .nxt-door:hover
 {
     color: #ff4320;
-    border-radius: 10px;
     transition: 0.5s;
+}
+.link-right .page #hire
+{
+    color: #ff4320;
+    border: 2px solid #ff4320;
+    padding:5px;
 }
 .link-right .page select[name="color-picker"]
 {
@@ -114,11 +121,94 @@ option[value="#17B486"] {
     background-color: #17B486;
     color: #fff;
 }
+.link-right .page select option:hover
+{
+    background-color:transparent;
+}
 .home_page-section,
 .about-us-section,
 .project-section {
-	position: absolute;
+	position: relative;
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 	color: #000;
+}
+
+
+/* Home Page */
+.home-page-section {
+    position: relative;
+    height: calc(100vh - 80px);
+    width: 100%;
+    margin: auto;
+    padding: 100px;
+}
+.home-page-section .landing-container {
+    position: relative;
+    height: 100%;   
+    width: 50vw;
+    padding: 25px;
+}
+.home-page-section .landing-container .landing-content
+{
+    margin: auto 0;
+}
+.home-page-section .landing-container .landing-content h2
+{
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 40px;
+    font-weight: 600; 
+}
+.home-page-section .landing-container .landing-content h2 .bhagwa-colour
+{
+    color: #ff4320;
+}
+.home-page-section .landing-container .landing-content .content-info-light
+{
+    width: 80%;
+    font-size: 30px;
+    font-family: "Rajdhani", sans-serif;
+    color: #555;
+    font-weight: 500;
+}
+.home-page-section .landing-container .social-media-links
+{
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: space-around;
+    width: 70%;
+}
+.home-page-section .landing-container .social-media-links .media{
+	text-decoration: none;
+	color:#999;
+    font-size: 20px;
+	transition: 0.5s;
+	border-bottom:2px solid transparent;
+
+}
+.home-page-section .landing-container .social-media-links .media:hover{
+	border-bottom:2px solid;
+	transition: .5s;
+}
+.img-holder
+{
+    position: relative;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:50vw;
+}
+.info-pic
+{
+    aspect-ratio: 3/2;
+    max-height: 600px;
+    max-width: 600px;
+}
+
+/* about-section */
+.about-us-section .profile-pic .pic
+{
+    height: 200px;
+    aspect-ratio: 1/1;
 }

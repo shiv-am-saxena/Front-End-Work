@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+        <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
 		<meta
 			name="description"
 			content="Welcome to my official Portfolio website where I put all my work related to Frontend and Software Development." />
@@ -22,7 +23,7 @@
 			crossorigin="anonymous" />
 	</head>
 	<body>
-		<nav class="nav-bar d-flex justify-content-between">
+		<nav class="nav-bar d-flex justify-content-between" id="nav-bottom">
 			<div class="name logo-left">
 				<svg
 					width="334"
@@ -46,12 +47,12 @@
 				<li class="page">
 					<a href="#projects" class="nxt-door">Projects</a>
 				</li>
-				<li class="page doors">
-					<a href="#contact" class="nxt-door">Hire Me</a>
+				<li class="page">
+					<a href="#contact" class="nxt-door" id="hire">Hire Me</a>
 				</li>
 				<li class="page">
-					<select name="color-picker" id="color-changer">
-						<option value="#FF4320">Orange</option>
+					<select name="color-picker" id="color-select">
+						<option value="#FF4320" default>Orange</option>
 						<option value="skyblue">Sky-Blue</option>
 						<option value="#a500ff">Voilet</option>
 						<option value="#2200ff">Blue</option>
@@ -59,31 +60,33 @@
 					</select>
 				</li>
                 <li class="page">
-					<input type="checkbox" id="theme-toggle" name="dark-mode/light-mode" checked>
+					<input type="checkbox" id="theme-toggle" name="dark-mode/light-mode">
 				</li>
 			</div>
 		</nav>
 		<section class="home-page-section d-flex flex-row justify-content-center" id="home">
-            <div class="landing-container left-center-holder">
-                <h2 class="head-data">
-                    Hey,<br />
-                    I am
-                    <span class="bhagwa-colour" id="dynamic-color">Shivam Saxena.</span
-                    ><br />
-                    I'm a Front-end Developer & Software Developer.
-                </h2>
-                <p class="content-info-light">
-                    Welcome to my official Portfolio website where I put
-                    all my work related to Frontend and Software
-                    Development.
-                </p>
-                <a
-                    href="Images/Shivam_Saxena.pdf"
-                    target="_blank"
-                    class="cv-loader" id="dynamic-color"
-                    >Download CV</a
-                >
-                <div class="social-media-links d-flex flex-row justify-content-center">
+            <div class="landing-container d-flex flex-column justify-content-between left-center-holder">
+                <div class="landing-content">
+                    <h2 class="head-data">
+                        Hey,<br />
+                        I am
+                        <span class="bhagwa-colour" id="name-color">Shivam Saxena.</span
+                        ><br />
+                        I'm a Front-end Developer & Software Developer.
+                    </h2>
+                    <p class="content-info-light">
+                        Welcome to my official Portfolio website where I put
+                        all my work related to Frontend and Software
+                        Development.
+                    </p>
+                    <a
+                        href="Images/Shivam_Saxena.pdf"
+                        target="_blank"
+                        class="cv-loader" id="resume-button"
+                        >Download CV</a
+                    >
+                </div>
+                <div class="social-media-links">
                     <li class="sosh">
                         <a
                             href="https://www.twitter.com/shiv_am_saxena"
