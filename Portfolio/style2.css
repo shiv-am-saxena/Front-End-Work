@@ -121,9 +121,9 @@ option[value="#17B486"] {
     background-color: #17B486;
     color: #fff;
 }
-.link-right .page select option:hover
-{
-    background-color:transparent;
+option[value="#FF8C00"] {
+    background-color: olive;
+    color: #fff;
 }
 .home_page-section,
 .about-us-section,
@@ -131,6 +131,7 @@ option[value="#17B486"] {
 	position: relative;
 	height: 100vh;
 	width: 100%;
+
 	color: #000;
 }
 
