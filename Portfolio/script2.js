@@ -13,23 +13,33 @@ select.addEventListener("change", (event) => {
 	document.getElementById("name-color").style.color = color;
 	document.getElementById("hire").style.borderColor = color;
 	document.getElementById("nav-bottom").style.borderBottomColor = color;
-	// document.getElementById("resume-button").style.setProperty("--after-background-color", color);
-	// document.getElementById("resume-button").style.setProperty("--before-background-color", color);
+    const nxtLink = document.getElementById('.nxt-door')[2];
+    nxtLink.classList.add(color);
+
+
+
+
 
 	const nxtDoor = document.getElementById("resume-button");
 	nxtDoor.addEventListener("mouseenter", () => {
 		nxtDoor.style.color = "#ffffff";
-		nxtDoor.style.setProperty("--before-background-color", color);
-		nxtDoor.style.setProperty("--after-background-color", color);
 	});
 
 	nxtDoor.addEventListener("mouseleave", () => {
 		nxtDoor.style.color = color;
-		nxtDoor.style.removeProperty("--before-background-color");
-		nxtDoor.style.removeProperty("--after-background-color");
 	});
 });
 
+
+nxtLink.addEventListener('mouseenter', () => {
+    // nxtLink.style.color = color;
+    
+});
+
+nxtLink.addEventListener('mouseleave', () => {
+    // nxtLink.style.color = "#000";
+    nxtLink.classList.remove('voilet');
+});
 // Dark mode toggle switch
 const toggleSwitch = document.getElementById("theme-toggle");
 

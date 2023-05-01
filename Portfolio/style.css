@@ -286,7 +286,7 @@ svg .draw {
 	top: 180%;
 	width: 160%;
 	height: 190%;
-	background-color: #ff4320;
+	background: #ff4320;
 	border-radius: 50%;
 	display: block;
 	-webkit-transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
