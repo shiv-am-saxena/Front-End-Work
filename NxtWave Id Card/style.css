@@ -96,7 +96,7 @@
 }
 
 .prof-dashboard .dashcard {
-    height: 60vh;
+    width: 60vw;
     aspect-ratio: 1/1;
     margin: 20vh auto;
     background: #fff;
