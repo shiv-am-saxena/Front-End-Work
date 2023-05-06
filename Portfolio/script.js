@@ -1,42 +1,30 @@
-// Dynamic Color Change
-const select = document.getElementById("color-select");
-let color = select.value;
-console.log(color);
-select.addEventListener("change", (event) => {
-	color = event.target.value;
-	document.getElementById("resume-button").style.color = color;
-	document.getElementById("resume-button").style.borderColor = color;
-	document.getElementById("dynamic-color").style.stroke = color;
-	document.getElementById("dynamic-color").style.fill = color;
-	document.getElementById("color-select").style.color = color;
-	document.getElementById("hire").style.color = color;
-	document.getElementById("name-color").style.color = color;
-	document.getElementById("hire").style.borderColor = color;
-	document.getElementById("nav-bottom").style.borderBottomColor = color;
-	// document.getElementById("resume-button").style.setProperty("--after-background-color", color);
-	// document.getElementById("resume-button").style.setProperty("--before-background-color", color);
-
-	const nxtDoor = document.getElementById("resume-button");
-	nxtDoor.addEventListener("mouseenter", () => {
-		nxtDoor.style.color = "#ffffff";
-		nxtDoor.style.setProperty("--before-background-color", color);
-		nxtDoor.style.setProperty("--after-background-color", color);
-	});
-
-	nxtDoor.addEventListener("mouseleave", () => {
-		nxtDoor.style.color = color;
-		nxtDoor.style.removeProperty("--before-background-color");
-		nxtDoor.style.removeProperty("--after-background-color");
-	});
-});
-
-// Dark mode toggle switch
-const toggleSwitch = document.getElementById("theme-toggle");
-
-toggleSwitch.addEventListener("change", (event) => {
-	if (event.target.checked) {
-		document.body.classList.add("dark-mode");
-	} else {
-		document.body.classList.remove("dark-mode");
-	}
-});
+const loadScript = (url) =>{
+    return new Promise((resolve,reject)=>{
+        let script = document.createElement("script");
+        script.src = url;
+        document.body.insertAdjacentElement("beforeend",script);
+        script.onload = (script)=>{
+            resolve("Success");
+        };
+        script.onerror = () => { reject("Bhai Error")}
+    });
+}
+let p = loadScript("http://localhost:5500/Portfolio/index.js");
+p.then(value =>
+    {
+        alert(value)
+        return new Promise((resolve,reject)=>
+        {
+            let sc = document.createElement("script");
+            sc.src = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js";
+            document.body.insertAdjacentElement("beforeend",sc);
+            sc.onload = (sc)=>{
+                resolve("Double Success");
+            };
+            sc.onerror = () =>{ reject("Bhai phir se Error")}
+            
+        })
+    }).then(value =>{
+        alert(value)
+    })
+    .catch(alert)
