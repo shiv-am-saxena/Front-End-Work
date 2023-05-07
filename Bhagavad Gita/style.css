@@ -1,5 +1,24 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
 .card-img-top
 {
     border-radius: 5px;
     object-fit: cover;
+}
+.container
+{
+    min-width:100%;
+}
+.row
+{
+    flex-wrap: wrap;
+}
+.navbar-brand
+{
+    font-family: 'Lobster', cursive;
+    font-size: 2rem!important;
 }

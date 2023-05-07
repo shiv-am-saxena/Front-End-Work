@@ -21,19 +21,84 @@ try {
 				<img
 					src="https://sourabhmore.com/wp-content/uploads/2021/04/Bhagwat-Gita.jpg"
 					class="card-img-top bg-dark"
-					alt="..." /> 
-				<div class="card-body">
-					<h5 class="card-title">${res[items].name}</h5>
+					alt="..." />
+				<div class="card-body d-flex flex-column">
+					<h5 class="card-title"><strong>नाम </strong>: ${res[items].name}</h5>
 					<p class="card-text">
-						Some quick example text to build on the card title
-						and make up the bulk of the card's content.
+						<strong>सारांश</strong>: ${res[items].chapter_summary_hindi}
 					</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
+					<button type="button" class="btn mt-auto btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop${res[items].chapter_number}">
+						<strong>श्लोक पढ़ें</strong>
+					</button>
 				</div>
+			</div>
+
+			<!-- Modal -->
+			<div class="modal fade" id="staticBackdrop${res[items].chapter_number}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="staticBackdropLabel">${res[items].name}</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="accordion" id="accordionExample">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
 			</div>`
-			document.getElementsByClassName("rows")[0].innerHTML = ihtml;
+			document.getElementsByClassName("row")[0].innerHTML = ihtml;
 		}
 	})
 } catch (error) {
 	console.error(error);
+}
+
+try
+{
+	for(let i = 1;i<=18;i++)
+	{
+		const link = `https://bhagavad-gita3.p.rapidapi.com/v2/chapters/${i}/verses/`;
+		try {
+			const value = fetch(link, options);
+			value.then((gita)=>{
+				return gita.json();
+			}).then((result)=>{
+				ihtm = ""
+				for(item in result)
+				{
+					console.log(result[item]);
+					ihtm += `
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingOne">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${result[item].chapter_number}-${result[item].verse_number}" aria-expanded="true" aria-controls="collapseOne">
+						${result[item].text}
+						</button>
+						</h2>
+						<div id="collapse${result[item].chapter_number}-${result[item].verse_number}" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+						<div class="accordion-body">
+							<strong>भावार्थ: </strong><br>
+							${result[item].translations[0].description}<br><strong>लेखक का नाम: </strong>${result[item].translations[0].author_name}<hr>
+							${result[item].translations[1].description}<br><strong>लेखक का नाम: </strong>${result[item].translations[1].author_name}<hr>
+							${result[item].translations[2].description}<br><strong>लेखक का नाम: </strong>${result[item].translations[2].author_name}<hr>
+							${result[item].translations[3].description}<br><strong>लेखक का नाम: </strong>${result[item].translations[3].author_name}<hr>
+							${result[item].translations[4].description}<br><strong>लेखक का नाम: </strong>${result[item].translations[4].author_name}<hr>
+							${result[item].translations[5].description}<br><strong>लेखक का नाम: </strong>${result[item].translations[5].author_name}<hr>
+							${result[item].translations[6].description}<br><strong>लेखक का नाम: </strong>${result[item].translations[6].author_name}
+						</div>
+						</div>
+					</div>`
+					document.getElementsByClassName("accordion")[i-1].innerHTML = ihtm;
+				}
+			})
+		} catch (error) {
+			console.error(error);
+		}
+	}
+} catch(error){
+	console.error(error)
 }
