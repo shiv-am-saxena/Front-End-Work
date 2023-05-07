@@ -80,14 +80,14 @@ try
 						</button>
 						</h2>
 						<div id="collapse${result[item].chapter_number}-${result[item].verse_number}" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-						<div class="accordion-body d-flex flex-column">
-							<p>${result[item].translations[0].description}<br><br><span class="ml-auto"><strong>लेखक का नाम: </strong>${result[item].translations[0].author_name}</span></p><hr>
-							<p>${result[item].translations[1].description}<br><br><span class="ml-auto"><strong>लेखक का नाम: </strong>${result[item].translations[1].author_name}</span></p><hr>
-							<p>${result[item].translations[2].description}<br><br><span class="ml-auto"><strong>लेखक का नाम: </strong>${result[item].translations[2].author_name}</span></p><hr>
-							<p>${result[item].translations[3].description}<br><br><span class="ml-auto"><strong>लेखक का नाम: </strong>${result[item].translations[3].author_name}</span></p><hr>
-							<p>${result[item].translations[4].description}<br><br><span class="ml-auto"><strong>लेखक का नाम: </strong>${result[item].translations[4].author_name}</span></p><hr>
-							<p>${result[item].translations[5].description}<br><br><span class="ml-auto"><strong>लेखक का नाम: </strong>${result[item].translations[5].author_name}</span></p><hr>
-							<p>${result[item].translations[6].description}<br><br><span class="ml-auto"><strong>लेखक का नाम: </strong>${result[item].translations[6].author_name}</span></p>
+						<div class="accordion-body">
+							<p class="d-flex flex-column">${result[item].translations[0].description}<br><br><span class="ml-auto"><strong>लेखक का नाम: </strong>${result[item].translations[0].author_name}</span></p><hr>
+							<p class="d-flex flex-column">${result[item].translations[1].description}<br><br><span class="ml-auto"><strong>लेखक का नाम: </strong>${result[item].translations[1].author_name}</span></p><hr>
+							<p class="d-flex flex-column">${result[item].translations[2].description}<br><br><span class="ml-auto"><strong>लेखक का नाम: </strong>${result[item].translations[2].author_name}</span></p><hr>
+							<p class="d-flex flex-column">${result[item].translations[3].description}<br><br><span class="ml-auto"><strong>लेखक का नाम: </strong>${result[item].translations[3].author_name}</span></p><hr>
+							<p class="d-flex flex-column">${result[item].translations[4].description}<br><br><span class="ml-auto"><strong>लेखक का नाम: </strong>${result[item].translations[4].author_name}</span></p><hr>
+							<p class="d-flex flex-column">${result[item].translations[5].description}<br><br><span class="ml-auto"><strong>लेखक का नाम: </strong>${result[item].translations[5].author_name}</span></p><hr>
+							<p class="d-flex flex-column">${result[item].translations[6].description}<br><br><span class="ml-auto"><strong>लेखक का नाम: </strong>${result[item].translations[6].author_name}</span></p>
 						</div>
 						</div>
 					</div>`
