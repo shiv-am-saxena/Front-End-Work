@@ -21,7 +21,7 @@ try {
 				<img
 					src="https://sourabhmore.com/wp-content/uploads/2021/04/Bhagwat-Gita.jpg"
 					class="card-img-top bg-dark"
-					alt="..." />
+					alt="..." /> 
 				<div class="card-body">
 					<h5 class="card-title">${res[items].name}</h5>
 					<p class="card-text">
