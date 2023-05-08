@@ -15,7 +15,6 @@ try {
         ihtml = ""
 		for(items in res)
 		{
-			console.log(res[items]);
 			ihtml += 
 			`<div class="card col-12 col-md-6 col-lg-4 col-xl-3 m-5 p-2">
 				<img
@@ -71,7 +70,6 @@ try
 				ihtm = ""
 				for(item in result)
 				{
-					console.log(result[item]);
 					ihtm += `
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="headingOne">
