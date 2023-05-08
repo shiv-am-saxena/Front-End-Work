@@ -23,7 +23,15 @@ try {
             `
 			document.getElementsByClassName("row")[0].innerHTML = ihtml;
 		}
-	})
+	}).catch((error)=>{
+        document.body.style.backgroundImage = `url("https://www.pixel4k.com/wp-content/uploads/2018/10/error-inscription-text-word-4k_1540575225.jpg")`;
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundRepeat = "no-repeat";
+        console.error(error);
+    })
 } catch (error) {
+    document.body.style.backgroundImage = `url("https://www.pixel4k.com/wp-content/uploads/2018/10/error-inscription-text-word-4k_1540575225.jpg")`;
+    document.body.style.backgroundSize = "cover";
+    document.body.style.backgroundRepeat = "no-repeat";
 	console.error(error);
 }
