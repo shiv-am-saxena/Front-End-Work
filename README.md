@@ -5,10 +5,10 @@
 	 You will find my all types of code here related to web.
 	 
 # Links to my projects till date 
-1. [NxtWave Virtual Id Card](https://shiv-am-saxenaa.github.io/Front-End-Work/NxtWave%20Id%20Card/index.html)
-2. [Gradient loader](https://shiv-am-saxenaa.github.io/Front-End-Work/gradient%20loader/index.html)
-3. [Neon Button](https://shiv-am-saxenaa.github.io/Front-End-Work/neon/index.html)
-4. [Horizontal Scroll](https://shiv-am-saxenaa.github.io/Front-End-Work/Move%20background%20image%20on%20scroll/index.html)
-5. [3d Menu](https://shiv-am-saxenaa.github.io/Front-End-Work/3d%20social%20media%20icon/index.html)
-6. [Neon banner](https://shiv-am-saxenaa.github.io/Front-End-Work/ui%20card%20design/index.html)
-6. [BHAGAVAD GITA](https://shiv-am-saxenaa.github.io/Front-End-Work/Bhagavad%20Gita/index.html)
+1. [NxtWave Virtual Id Card](https://shiv-am-saxena.github.io/Front-End-Work/NxtWave%20Id%20Card/index.html)
+2. [Gradient loader](https://shiv-am-saxena.github.io/Front-End-Work/gradient%20loader/index.html)
+3. [Neon Button](https://shiv-am-saxena.github.io/Front-End-Work/neon/index.html)
+4. [Horizontal Scroll](https://shiv-am-saxena.github.io/Front-End-Work/Move%20background%20image%20on%20scroll/index.html)
+5. [3d Menu](https://shiv-am-saxena.github.io/Front-End-Work/3d%20social%20media%20icon/index.html)
+6. [Neon banner](https://shiv-am-saxena.github.io/Front-End-Work/ui%20card%20design/index.html)
+6. [BHAGAVAD GITA](https://shiv-am-saxena.github.io/Front-End-Work/Bhagavad%20Gita/index.html)
