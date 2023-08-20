@@ -22,7 +22,7 @@ function timerClock() {
         else{
             clearInterval(timer);
             document.querySelector("#pbtm").innerHTML = `<h1>Game Over</h1>`;
-            document.querySelector("#pbtm").style.color = "Green";
+            document.querySelector("#pbtm").style.color = "#ff4320";
         }
     }, 1000);
 }
