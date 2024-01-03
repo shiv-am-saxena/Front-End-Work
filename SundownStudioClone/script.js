@@ -1,4 +1,11 @@
-
+function preloading() {
+    let preloader = document.querySelector('.preloader')
+    setTimeout(function () {
+        preloader.style.top = "-100%";
+        // preloader.style.display = "none";
+    }, 10000);
+}
+preloading();
 function smoothscroll(value) {
     const scroll = new LocomotiveScroll({
         el: document.querySelector(value),
@@ -8,17 +15,20 @@ function smoothscroll(value) {
 let fixedBox = document.querySelector('.fixedWindow');
 let fixedElem = document.querySelectorAll(".fixedElemBar");
 // console.log(fixedElem)
-fixedElem.forEach(function (elem) {
-    // console.log(elem.getAttribute("data-image"))
-    elem.addEventListener("mouseenter", function () {
-        fixedBox.style.display = "block";
-        fixedBox.style.backgroundImage = `url(${elem.getAttribute('data-image')})`;
-    })
-    elem.addEventListener("mouseleave", function () {
-        fixedBox.style.display = "none";
+function fixedStrips() {
+    fixedElem.forEach(function (elem) {
+        // console.log(elem.getAttribute("data-image"))
+        elem.addEventListener("mouseenter", function () {
+            fixedBox.style.display = "block";
+            fixedBox.style.backgroundImage = `url(${elem.getAttribute('data-image')})`;
+        })
+        elem.addEventListener("mouseleave", function () {
+            fixedBox.style.display = "none";
 
+        })
     })
-})
+}
+fixedStrips();
 smoothscroll('#main')
 // smoothscroll('img')
 
