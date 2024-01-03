@@ -4,6 +4,11 @@ function preloading() {
         preloader.style.top = "-100%";
         // preloader.style.display = "none";
     }, 10000);
+    setTimeout(function () {
+        // preloader.style.top = "-100%";
+        preloader.style.display = "none";
+        // console.log("cghj");
+    }, 10100);
 }
 preloading();
 function smoothscroll(value) {
