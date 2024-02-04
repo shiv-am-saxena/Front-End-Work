@@ -16,4 +16,4 @@
 9. [Note Maker](https://shiv-am-saxena.github.io/Front-End-Work/Note-maker/index.html)
 10. [Bubble Game JS](https://shiv-am-saxena.github.io/Front-End-Work/Bubble%20Game%20JS/)
 11. [Sundown Studio Clone](https://shiv-am-saxena.github.io/Front-End-Work/SundownStudioClone/)
-12. [Rwact-Notes-App](https://react-notes-app-33ww.onrender.com/)
+12. [React-Notes-App](https://react-notes-app-33ww.onrender.com/)
