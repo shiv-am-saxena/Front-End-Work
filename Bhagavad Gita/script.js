@@ -18,7 +18,7 @@ try {
 			ihtml += 
 			`<div class="card col-12 col-md-6 col-lg-4 col-xl-3 m-5 p-2">
 				<img
-					src="https://sourabhmore.com/wp-content/uploads/2021/04/Bhagwat-Gita.jpg"
+					src="https://wallpaperaccess.com/full/4524218.jpg"
 					class="card-img-top bg-dark"
 					alt="..." />
 				<div class="card-body d-flex flex-column">
